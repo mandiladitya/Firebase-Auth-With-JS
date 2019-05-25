@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>firebase login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyA5XPFpvYp3G1DwH51GPLGR4Jd484v8i64",
+    authDomain: "testing-auth-946d2.firebaseapp.com",
+    databaseURL: "https://testing-auth-946d2.firebaseio.com",
+    projectId: "testing-auth-946d2",
+    storageBucket: "testing-auth-946d2.appspot.com",
+    messagingSenderId: "20227601281",
+    appId: "1:20227601281:web:0f2b59e8d02d8790"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+     
+</script>
+</head>
+<body bgcolor="lightpink">
+    <input  type="text" id="email" name="email" placeholder="Email"/>
+          &nbsp;&nbsp;&nbsp;
+          <input  type="password" id="password" name="password" placeholder="Password"/>
+          <br/><br/>
+       
+        
+          <button  name="signup" onclick= "handlesignup() ; writeuser(); " >Sign Up</button>
+          &nbsp;&nbsp;&nbsp;
+          <button  name="login" onclick="sendEmailVerification()" >verification link</button><br><br>
+          <button  name="login" onclick="login()" >login</button><br><br>
+          <button  name="login" onclick="logout()" >logout</button><br><br>
+</body>
+<script src="login.js"></script>
+</html>
